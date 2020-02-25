@@ -1,0 +1,3 @@
+set_pin_assignment	{ RST_N }	{ LOCATION = K16; }
+set_pin_assignment	{ R_LED }	{ LOCATION = R3; }
+

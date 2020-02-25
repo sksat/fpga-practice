@@ -12,7 +12,7 @@
         <Verilog>
             <File>../src/top.v</File>
         </Verilog>
-        <ADC_FILE/>
+        <ADC_FILE>../constraint/io.adc</ADC_FILE>
         <SDC_FILE/>
         <CWC_FILE/>
     </Source_Files>
@@ -22,7 +22,7 @@
         <CREATEINDEX>auto</CREATEINDEX>
     </TOP_MODULE>
     <Project_Settings>
-        <Step_Last_Change>2020-02-26 03:59:46</Step_Last_Change>
+        <Step_Last_Change>2020-02-26 04:06:12</Step_Last_Change>
         <Current_Step>60</Current_Step>
         <Step_Status>true</Step_Status>
     </Project_Settings>
