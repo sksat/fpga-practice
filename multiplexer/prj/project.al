@@ -12,6 +12,11 @@
         <Verilog>
             <File>../src/top.v</File>
 			<File>../src/mux.v</File>
+			<File>../src/myxor.v</File>
+			<File>../src/myor.v</File>
+			<File>../src/myand.v</File>
+			<File>../src/mynot.v</File>
+			<File>../src/mynand.v</File>
         </Verilog>
         <ADC_FILE>../const/io.adc</ADC_FILE>
         <SDC_FILE/>
