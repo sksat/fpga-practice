@@ -1,0 +1,29 @@
+# Tang Primer
+
+USB刺すとこ
+
+|               |			|			|
+|---------------|-----------|-----------|
+|GND			|GPIO14	L12	|GD_SWDIO	|
+|5V				|GPIO13	J11	|GD_SWCLK	|
+|3V3			|GPIO17	J13	|UO_TX		|
+|VBO			|GPIO16	H13	|UO_RX		|
+|GND			|GND		||
+|GPIO15		M12	|GPIO12	F16	||
+|GPIO18		R16	|GPIO11	E16	||
+|GPIO19		N12	|GPIO10	C15	||
+|GPIO20		P12	|GPIO9	C16	||
+|GPIO21		N11	|GPIO8	B16	||
+|GPIO22		L10	|GPIO7	B15	||
+|GPIO23		P11	|GPIO6	A14	||
+|GPIO24		M10	|GPIO5	B14	||
+|GND			|GND		||
+|GPIO25		R7	|GPO4		||
+|GPIO26		T7	|E_TMS	B10	||
+|GPIO27		P5	|E_TDI	B6	||
+|GPIO28		N5	|E_TCK	C5	||
+|GPIO29		R2	|GPIO0	A3	||
+|GPIO30		P2	|E_TDO	A4	||
+
+
+LCD刺すとこ
