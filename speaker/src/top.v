@@ -9,11 +9,12 @@ module top(
 
 	reg [31:0] count;
 	reg [31:0] count_440hz;
-	reg clk_1hz, clk_2hz, clk_440hz;
+	reg [31:0] count_442hz;
+	reg clk_1hz, clk_2hz, clk_440hz, clk_442hz;
 
 	wire speaker;
 
-	assign speaker = clk_440hz & (!RST_N);
+	assign speaker = (RST_N ? clk_440hz : clk_442hz);
 
 	initial begin // 初期化
 		count = 32'b0;
@@ -39,6 +40,14 @@ module top(
 			clk_440hz <= !clk_440hz;
 		end
 		count_440hz = count_440hz + 1;
+	end
+
+	always @(posedge CLK_IN) begin
+		if(count_442hz >= (CLOCK_FREQ / 442)/2) begin
+			count_442hz = 32'b0;
+			clk_442hz <= !clk_442hz;
+		end
+		count_442hz = count_442hz + 1;
 	end
 
 	assign RGB_LED[0] = clk_1hz;
